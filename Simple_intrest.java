@@ -5,5 +5,8 @@ public class Simple_intrest {
         int t = 2;
         int SI = (p*r*t)/100;
         System.out.println(SI); 
+
+        System.out.println("Hey Bro :"+p+" "+r+" "+ t);
+
     }
 }
