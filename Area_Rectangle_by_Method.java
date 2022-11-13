@@ -6,13 +6,14 @@ public class Area_Rectangle_by_Method {
         return 1;
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Lenght: ");
-        int l = sc.nextInt();
-        System.out.println("Enter THe bredth: ");
-        int b = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter the Lenght: ");
+			int l = sc.nextInt();
+			System.out.println("Enter THe bredth: ");
+			int b = sc.nextInt();
 
-        printArea(l, b);
+			printArea(l, b);
+		}
         
     }
 }
