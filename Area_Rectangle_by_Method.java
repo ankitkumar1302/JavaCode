@@ -11,12 +11,6 @@ public class Area_Rectangle_by_Method {
         int l = sc.nextInt();
         System.out.println("Enter THe bredth: ");
         int b = sc.nextInt();
-        printArea(l, b);
-        printArea(l, b);
-        printArea(l, b);
-        printArea(l, b);
-        printArea(l, b);
-
-        
+        printArea(l, b);       
     }
 }
