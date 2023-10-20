@@ -1,30 +1,27 @@
-import java.util.*;
+import java.util.Scanner;
+
 public class CollegeOOPS {
-    public static void main(String args[]) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the value of N: ");
-        int N = scanner.nextInt();
-
-        int num = 1;
-        for (int i = 1; i <= N; i++) {
-            // Print spaces
-            for (int j = 1; j <= 2 * (N - i); j++) {
-                System.out.print(" ");
-            }
-
-            // Print increasing sequence
-            for (int j = i; j <= 2 * i - 1; j++) {
-                System.out.print(j + " ");
-            }
-
-            // Print decreasing sequence
-            for (int j = 2 * i - 2; j >= i; j--) {
-                System.out.print(j + " ");
-            }
-
-            System.out.println();
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr =new int[n];
+        int[] arr2 =new int[n];
+        int m=0;
+        for (int i=0; i<n; i++){
+            arr[i]=sc.nextInt();
+            arr2[i]=arr[i];
         }
-
-        scanner.close();
+        for(int i=0; i<n; i++)
+        {
+            m=arr[i];
+            arr2[m]=i;
+        }
+        for(int i=0; i<n; i++)
+        {
+            System.out.print(arr2[i]+" ");
+        }
     }
 }
+
+
+
