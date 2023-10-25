@@ -17,7 +17,6 @@ public class switchcase {
 //            case "Grapes" -> System.out.println("Small fruits");
 //            default -> throw new IllegalStateException("Unexpected value: " + fruit);
 //        }
-
         int days = in.nextInt();
         switch (days) {
             case 1, 2, 3, 4, 5 -> System.out.println("Weekday");
