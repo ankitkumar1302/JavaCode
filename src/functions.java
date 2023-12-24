@@ -14,6 +14,9 @@ public class functions {
     }
 
     static int add(int firstNo, int secondNo) {
+
+        // Added some new lines
+
         return firstNo + secondNo;
     }
 }
