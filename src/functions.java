@@ -3,20 +3,46 @@ import java.util.Scanner;
 public class functions {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+//        add();
+//        int sum = add2();
+//        System.out.println("The sum is : " + sum);
 
-        // Take the input of 2 numbers and print the sum in function
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String naam = sc.next();
+        String person = hello(naam);
+        System.out.println(person);
+
+    }
+
+    static void add() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number: ");
         int firstNo = sc.nextInt();
         System.out.println("Enter the second number: ");
         int secondNo = sc.nextInt();
-        System.out.println(add(firstNo, secondNo));
+        int sum = firstNo + secondNo;
+        System.out.println("The sum is :" + sum);
     }
 
-    static int add(int firstNo, int secondNo) {
+    static int add2() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int firstNo = sc.nextInt();
+        System.out.println("Enter the second number: ");
+        int secondNo = sc.nextInt();
+        int sum = firstNo + secondNo;
+//        System.out.println("The sum is :" + sum);
+        return sum;
+    }
 
-        // Added some new lines
+    static String hello(String name) {
 
-        return firstNo + secondNo;
+        String message = "Hello " + name;
+        return message;
     }
 }
+/*
+Static :- Does not depend on static
+TODO:  write
+ */
