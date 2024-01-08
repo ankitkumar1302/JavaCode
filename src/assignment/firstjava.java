@@ -19,12 +19,10 @@ public class firstjava {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the name");
-
-
 
     }
+
+    /*
     static void firstQuestion(int a) {
         if (a % 2 == 0) {
             System.out.println("This is an Even Number");
@@ -37,4 +35,27 @@ public class firstjava {
         return  "Good" + name;
     }
 
+    static int thirdQuestion(int a, int b, int c) {
+        Scanner P = new Scanner(System.in);
+        Scanner R = new Scanner(System.in);
+        Scanner T = new Scanner(System.in);
+        System.out.println("Enter the Principle: ");
+        int p = P.nextInt();
+        System.out.println("Enter the Rate: ");
+        int r = R.nextInt();
+        System.out.println("Enter the Time: ");
+        int t = T.nextInt();
+
+        int ans = thirdQuestion(p, r, t);
+        System.out.println("The Simple Interest is: " + ans);
+
+        int SimpleInterest = a * b * c;
+        return SimpleInterest;
+
+    }
+
+
+
+
+     */
 }
