@@ -25,9 +25,6 @@ public class firstjava {
 
 
     }
-
-//    static
-    /*
     static void firstQuestion(int a) {
         if (a % 2 == 0) {
             System.out.println("This is an Even Number");
@@ -35,13 +32,9 @@ public class firstjava {
             System.out.println("This is a Odd Number");
         }
     }
-    secondQuestion
+   // secondQuestion
     static String greet(String name) {
         return  "Good" + name;
     }
 
-
-
-
-     */
 }
