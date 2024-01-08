@@ -20,11 +20,18 @@ public class firstjava {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number");
-        int a = sc.nextInt();
-        firstQuestion(a);
+        System.out.println("Enter the name");
+        String name = sc.next();
+//        greet(name);
+        System.out.println(greet(name));
 
     }
+
+    static String greet(String name) {
+        return  "Good" + name;
+
+    }
+
 
     static void firstQuestion(int a) {
         if (a % 2 == 0) {
@@ -33,5 +40,6 @@ public class firstjava {
             System.out.println("This is a Odd Number");
         }
     }
+
 
 }
