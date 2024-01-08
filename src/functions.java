@@ -38,8 +38,7 @@ public class functions {
 
     static String hello(String name) {
 
-        String message = "Hello " + name;
-        return message;
+        return "Hello " + name;
     }
 }
 /*
