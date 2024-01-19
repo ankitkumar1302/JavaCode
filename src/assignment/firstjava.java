@@ -1,7 +1,5 @@
 package assignment;
 
-import java.util.Scanner;
-
 public class firstjava {
 
     /*
@@ -18,11 +16,40 @@ public class firstjava {
      */
 
     public static void main(String[] args) {
-
-
+        boolean ans = eighthQuestion("naman");
+        System.out.println(ans);
     }
 
-    /*
+
+    static boolean eighthQuestion(String str) {
+        int i = 0;
+        int j = str.length() - 1; // get the last index
+        while (i < j) {
+            if (str.charAt(i) != str.charAt(j)) {
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+    }
+
+/*
+    static void seventhQuestion() {
+        int t1 = 0;
+        int t2 = 1;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println("First "+n+" terms: ");
+        for (int i = 0; i <= n; i++) {
+            System.out.print(t1  + " + ");
+//            System.out.print(t1 + t2);
+            int sum = t1+t2;
+            t1 = t2;
+            t2 = sum;
+        }
+    }
+
     static void firstQuestion(int a) {
         if (a % 2 == 0) {
             System.out.println("This is an Even Number");
