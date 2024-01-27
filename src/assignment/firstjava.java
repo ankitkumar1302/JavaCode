@@ -16,11 +16,13 @@ public class firstjava {
      */
 
     public static void main(String[] args) {
-        boolean ans = eighthQuestion("naman");
-        System.out.println(ans);
+
+
+
+
     }
 
-
+/*
     static boolean eighthQuestion(String str) {
         int i = 0;
         int j = str.length() - 1; // get the last index
@@ -34,7 +36,6 @@ public class firstjava {
         return true;
     }
 
-/*
     static void seventhQuestion() {
         int t1 = 0;
         int t2 = 1;
