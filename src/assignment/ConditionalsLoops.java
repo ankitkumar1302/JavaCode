@@ -24,34 +24,53 @@ public class ConditionalsLoops {
       19) Curved Surface Area Of Cylinder
       20) Total Surface Area Of Cube
       21) Fibonacci Series In Java Programs
-
+      22) Subtract the Product and Sum of Digits of an Integer
+      23) Input a number and print all the factors of that number (use loops).
+      24)Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+      25)Take integer inputs till the user enters 0 and print the largest number from all.
+      26)Addition Of Two Numbers
 
      */
     public static void main(String[] args) {
-//      System.out.println(question1(20));
-//      System.out.println(question2(20));
-//      System.out.println(question3(10,5));
-//        System.out.println(question4(5,4));
-//        System.out.println(question5(5,5));
-//        System.out.println(rhombus(10,10));
-//        System.out.println(EquilateralTriangle(5));
-//        System.out.println(parallelogramPari(20,10));
-//        System.out.println(rectPeri(20,10));
-//        System.out.println(periSq(5));
-//        System.out.println(periRhombus(5));
-//        System.out.println(volCone(5,6));
-//        System.out.println(volPrism(20,5));
-//        System.out.println(volCy(5,5));
-//        System.out.println(volSphere(5));
-//        System.out.println(volPyramid(5,3,6));
-//        System.out.println(csaCylinder(5,5));
-//        System.out.println(tsaCube(5));
+
+
+
     }
+
+
 
 
 
   /*
 
+
+
+
+    static public int subtractProductAndSum(int n) {
+        int product = 1;
+        int sum = 0;
+        while (n > 0) {
+            int d = n%10;
+            product = product*d;
+            sum = sum+d;
+            n = n/10;
+        }
+        return product - sum;
+    }
+
+    static void fibonacci(int n){
+        int a = 0;
+        int b = 1;
+        int sum;
+        System.out.println("The numbers you entered "+ n);
+        System.out.println("First " + n + " terms: ");
+        for (int i = 0; i <= n; i++) {
+            System.out.print(a +",");
+            sum = a+b;
+            a = b;
+            b = sum;
+        }
+    }
 
 static int tsaCube(int a){
         return 6*a;

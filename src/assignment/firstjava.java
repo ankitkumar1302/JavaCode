@@ -17,11 +17,34 @@ public class firstjava {
 
     public static void main(String[] args) {
 
-
-
+        findArmstrongNumbers(100, 999);
 
     }
 
+    static void findArmstrongNumbers(int low, int high) {
+        for (int num = low + 1; num < high; ++num) {
+            int digits = 0;
+            int result = 0;
+            int originalNum = num;
+
+            // number of digits calculation
+            while (originalNum != 0) {
+                originalNum /= 10;
+                ++digits;
+            }
+            originalNum = num;
+
+            // result contains sum of nth power of its digits
+            while (originalNum != 0) {
+                int remainder = originalNum % 10;
+                result += Math.pow(remainder, digits);
+                originalNum /= 10;
+            }
+
+            if (result == num)
+                System.out.print(num + " ");
+        }
+    }
 /*
     static boolean eighthQuestion(String str) {
         int i = 0;
