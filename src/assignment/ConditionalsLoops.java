@@ -1,5 +1,7 @@
 package assignment;
 
+import java.util.Scanner;
+
 public class ConditionalsLoops {
 
     /*
@@ -57,20 +59,70 @@ public class ConditionalsLoops {
     24. Sum Of A Digits Of Number
     25. Kunal is allowed to go out with his friends only on the even days of a given month.
         Write a program to count the number of days he can go out in the month of August.
-    26. Write a program to print the sum of negative numbers, sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user.
+    26. Write a program to print the sum of negative numbers,
+        sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user.
         The list terminates when the user enters a zero.
 
      */
     public static void main(String[] args) {
+//        sumOfAll();
+//        add();
 
-
+//        factorOfNumber(n1);
     }
 
 
 
   /*
 
+  static void add() {
+        int first;
+        int second;
+        int sum;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the 1st value:");
+        first = sc.nextInt();
+        System.out.println("Enter the second value:");
+        second = sc.nextInt();
+        System.out.println("The sum of the given number is:");
+        sum = first + second;
+        System.out.println(sum);
+    }
 
+ public static void largest() {
+        int max = Integer.MIN_VALUE;
+        Scanner scanner = new Scanner(System.in);
+        int num;
+
+        System.out.println("Enter numbers (0 to stop):");
+        while ((num = scanner.nextInt()) != 0) {
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        System.out.println("Largest number: " + max);
+    }
+    static void sumOfAll() {
+        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
+        int num;
+        System.out.println("Enter numbers (0 to stop):");
+        while ((num = scanner.nextInt()) != 0) {
+            sum += num;
+        }
+        System.out.println("Sum of all the numbers: " + sum);
+    }
+
+
+     static void factorOfNumber(int n) {
+        // Print all the factor of that number.
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.print(i + ",");
+            }
+        }
+    }
 
 
     static public int subtractProductAndSum(int n) {
