@@ -1,7 +1,5 @@
 package assignment;
 
-import java.util.Scanner;
-
 public class ConditionalsLoops {
 
     /*
@@ -65,6 +63,8 @@ public class ConditionalsLoops {
 
      */
     public static void main(String[] args) {
+//        TODO: Calculate the discount of product.(3)
+
 
 
     }
@@ -73,8 +73,22 @@ public class ConditionalsLoops {
 
 
 
-
   /*
+
+    public static double calculateDiscount(double originalPrice, double discountRate) {
+        /***
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the product price: ");
+        double price = sc.nextDouble();
+        System.out.println("Enter the discount rate: ");
+        double discount = sc.nextDouble();
+        System.out.println(calculateDiscount(price,discount));
+
+        double discountAmount = originalPrice * discountRate / 100;
+        double finalPrice = originalPrice - discountAmount;
+        return finalPrice;
+}
+
 
    public static double avgOfNumber(double[] arr) {
 
