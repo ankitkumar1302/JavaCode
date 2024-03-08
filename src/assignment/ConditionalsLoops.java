@@ -67,21 +67,67 @@ public class ConditionalsLoops {
     public static void main(String[] args) {
 
 
-
     }
 
 
 
 
-
-
-    public static void bill(int n) {
-
-
-    }
 
 
   /*
+
+   public static double avgOfNumber(double[] arr) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many item you want to enter: ");
+        int n = sc.nextInt();
+        double[] arr = new double[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter the value :");
+            arr[i] = sc.nextDouble();
+        }
+        double avg = avgOfNumber(arr);
+        System.out.println("The average is -> " + avg);
+
+        double sum = 0;
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            sum = arr[i];
+        }
+        return (double) sum / n;
+    }
+
+
+
+        start 50 unit -> 3.5rs
+        after these unit 250 -> 6.5rs
+        after these unit upto 301 -> 7rs
+
+
+    public static double calculate_Bill(int units)
+    {
+
+        Scanner sc = new Scanner(System.in);
+        //System.out.println(bill());
+        System.out.println("Enter your Electricity (Unit)-> ");
+        int unit = sc.nextInt();
+        double bill= calculate_Bill(unit);
+        System.out.println(" Bill Value ->"+bill);
+        double bill=0;
+        if(units <=50)
+        {
+            bill=units*3.50;
+        }
+        else if( units<=250)
+        {
+            bill=50*3.50 + (units-50)*6.50;
+        }
+        else
+        {
+            bill=50*3.50 + 200*6.50 + (units-250)*7;
+        }
+       return  bill;
+    }
 
   public static int printNo(int n) {
         if (n == 0) {
