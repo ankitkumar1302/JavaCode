@@ -33,7 +33,7 @@ public class ConditionalsLoops {
       26)Addition Of Two Numbers
 
         ### Intermediate Java Programs
-    1. Factorial Program In Java
+    1. Factorial Program In Java (done)
     2. Calculate Electricity Bill
     3. Calculate Average Of N Numbers
     4. Calculate Discount Of Product
@@ -65,15 +65,41 @@ public class ConditionalsLoops {
 
      */
     public static void main(String[] args) {
-//        sumOfAll();
-//        add();
 
-//        factorOfNumber(n1);
+
+
     }
 
 
 
+
+
+
+    public static void bill(int n) {
+
+
+    }
+
+
   /*
+
+  public static int printNo(int n) {
+        if (n == 0) {
+            return 0;
+        } else {
+            System.out.println(n);
+            return printNo(n - 1);
+        }
+    }
+
+  public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
 
   static void add() {
         int first;
@@ -91,7 +117,7 @@ public class ConditionalsLoops {
 
  public static void largest() {
         int max = Integer.MIN_VALUE;
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int num;
 
         System.out.println("Enter numbers (0 to stop):");
