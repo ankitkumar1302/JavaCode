@@ -1,5 +1,7 @@
 package assignment;
 
+import java.util.Scanner;
+
 public class ConditionalsLoops {
 
     /*
@@ -36,7 +38,7 @@ public class ConditionalsLoops {
     3. Calculate Average Of N Numbers
     4. Calculate Discount Of Product
     5. Calculate Distance Between Two Points
-    6. Calculate Commission Percentage
+    6. Calculate Commission Percentage // the divisor is totalAmount
     7. Power In Java
     8. Calculate Depreciation of Value
     9. Calculate Batting Average
@@ -63,20 +65,133 @@ public class ConditionalsLoops {
 
      */
     public static void main(String[] args) {
-//        TODO: Calculate the discount of product.(3)
-
+        Scanner sc = new Scanner(System.in);
 
 
     }
 
+    public static float calculateCGPA() {
+        return 0;
+    }
 
 
 
 
   /*
 
+        public static int battingAverage(int totalRunScored, int numberOfTimeOut) {
+
+        //main
+
+        System.out.println("Enter how much run he scored :");
+        int runScored = sc.nextInt();
+        System.out.println("Enter how much times he/she Out :");
+        int timesOut = sc.nextInt();
+        System.out.println("The Batting average is :" + battingAverage(runScored, timesOut));
+
+        //over
+
+        return totalRunScored / numberOfTimeOut;
+    }
+
+
+
+      public static double depreciationOfValue(double initialValue,double rateOfDeprecation,int noOfYears){
+
+        // Main
+
+        System.out.println("Enter the initial value of the product :");
+        double initialValue = sc.nextDouble();
+        System.out.println("Enter the rate of deprecation :");
+        double rateOfDeprecation = sc.nextDouble();
+        System.out.println("Enter the number of years :");
+        int noOfYears = sc.nextInt();
+        System.out.println("The Deprecated value of your product is :"+depreciationOfValue(initialValue,rateOfDeprecation,noOfYears));
+
+
+        //Over
+
+        return initialValue * Math.pow((1-rateOfDeprecation),noOfYears);
+    }
+
+
+    public static double powerInJava(double base,double expo){
+        //main
+      System.out.println("Enter the base: ");
+      double base = sc.nextDouble();
+      System.out.println("Enter the exponent/power");
+      double expo = sc.nextDouble();
+      System.out.println(powerInJava(base,expo));
+      //over
+        return Math.pow(base, expo);
+  }
+
+
+         public static double commissionPercentage(double totalAmount, double commissionAmount) {
+        // main
+        System.out.println("Enter the Total amount :");
+        double totalAmount = sc.nextDouble();
+        System.out.println("Enter the Commission amount :");
+        double commissionAmount = sc.nextDouble();
+        System.out.println("The Commission Percentage is: " + commissionPercentage(totalAmount, commissionAmount));
+        //over
+
+        return (commissionAmount / totalAmount) * 100;
+    }
+
+
+       public static double calculateDistanceBwtTwoPoints(double x1, double x2, double y1, double y2) {
+
+        // main
+        System.out.println("Enter the 1st coordinate of X:");
+        double coordinate_1_Of_X = sc.nextDouble();
+        System.out.println("Enter the 2nd coordinate of X :");
+        double coordinate_2_OfX = sc.nextDouble();
+        System.out.println("Enter the 1st coordinate of Y :");
+        double coordinate_1_Of_Y = sc.nextDouble();
+        System.out.println("Enter the 2nd coordinate of Y :");
+        double coordinate_2_Of_Y = sc.nextDouble();
+        System.out.println("The distance that you covered is " + calculateDistanceBwtTwoPoints(coordinate_1_Of_X, coordinate_2_OfX, coordinate_1_Of_Y, coordinate_2_Of_Y));
+// over
+
+        return Math.sqrt(Math.pow(x1 - y1, 2) + Math.pow(x2 - y2, 2));
+    }
+
+
+   public static float calculateDistance(float dist1, float dist2) {
+
+     Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the First Distance");
+        float distanceFirst = sc.nextFloat();
+        System.out.println("Enter the Second Distance");
+        float distanceSecond = sc.nextFloat();
+        System.out.println("The final distance is :" + calculateDistance(distanceFirst, distanceSecond));
+
+        if (dist1 > dist2) {
+            return dist1 - dist2;
+        }
+    return 0;
+    }
+
+
+    public static double calculateDiscount(double originalPrice, float discountRate) {
+
+
+        //        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the price:");
+//        double price = sc.nextDouble();
+//        System.out.println("Enter the discount rate:");
+//        float discount = sc.nextFloat();
+//        System.out.println("The discount is "+calculateDiscount(price,discount));
+
+
+        double discountPrice = originalPrice * discountRate / 100;
+
+        return originalPrice - discountPrice;
+    }
+
     public static double calculateDiscount(double originalPrice, double discountRate) {
-        /***
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the product price: ");
         double price = sc.nextDouble();
