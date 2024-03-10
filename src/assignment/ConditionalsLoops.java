@@ -42,7 +42,7 @@ public class ConditionalsLoops {
     7. Power In Java
     8. Calculate Depreciation of Value
     9. Calculate Batting Average
-    10. Calculate CGPA Java Program
+    10. Calculate CGPA Java Program // CGPA = Total Grade Points Earned / Total Credit Hours
     11. Compound Interest Java Program
     12. Calculate Average Marks
     13. Sum Of N Numbers
@@ -66,12 +66,36 @@ public class ConditionalsLoops {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("How many hours allotted for you to study :");
+        int size = sc.nextInt();
+        int[] creditHours = new int[size];
+        System.out.println("Enter your credit (For example 1,2,3) :");
+        for (int i = 0; i < creditHours.length; i++) {
+            creditHours[i] = sc.nextInt();
+        }
+        System.out.println("Enter you Grade Points (For example 4.0 ,4 ,5.5) :");
+        float[] gradePoint = new float[size];
+        for (int i = 0; i < gradePoint.length; i++) {
+            gradePoint[i] = sc.nextFloat();
+        }
+        float cgpa = calculateCGPA(creditHours, gradePoint);
+        System.out.println("The cgpa is " + cgpa);
 
     }
 
-    public static float calculateCGPA() {
-        return 0;
+    public static float calculateCGPA(int[] creditHours, float[] gradePoints) {
+        if (creditHours.length != gradePoints.length) {
+            throw new IllegalArgumentException("The numbers you have entered must be correct");
+        }
+        int totalCreditHours = 0;
+        float totalGradePoints = 0.0f;
+
+        for (int i = 0; i < creditHours.length; i++) {
+            totalCreditHours += creditHours[i];
+            totalGradePoints += gradePoints[i] * creditHours[i];
+        }
+        return totalGradePoints / totalCreditHours;
+
     }
 
 
