@@ -66,6 +66,130 @@ public class ConditionalsLoops {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int n = 5;
+        int c = 3;
+
+        System.out.println("NCR (Combination) = " + nCr(n, c));
+        System.out.println("NPR (Permutation) = " + nPr(n, c));
+
+    }
+
+    static int factorial(int n) {
+        int fact = 1;
+        for (int i = 2; i <= n; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+    static int nCr(int n, int r) {
+        return factorial(n) / (factorial(r) * factorial(n - r));
+    }
+
+    static int nPr(int n, int r) {
+        return factorial(n) / factorial(n - r);
+    }
+
+
+
+
+
+
+  /*
+
+
+    public static boolean armstrongNumber(int num) {
+
+        // main
+
+        System.out.println("Enter the number :");
+        int isArmstrong = sc.nextInt();
+        System.out.println("The number is "+armstrongNumber(isArmstrong));
+
+        //over
+
+        int originalNumber, remainder, result = 0, n = 0;
+        originalNumber = num;
+
+        for (; originalNumber != 0; originalNumber /= 10, ++n) {
+        }
+        originalNumber = num;
+        for (; originalNumber != 0; originalNumber /= 10) {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, n);
+        }
+        if (result == num)
+            return true;
+        else
+            return false;
+
+    }
+
+    public static int sumOfNNumbers(int[] arr) {
+
+        // main
+        System.out.println("How many numbers you want to Enter :");
+        int numbers = sc.nextInt();
+        int[] arr = new int[numbers];
+        System.out.println("Enter the numbers");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("The sum of the Numbers is :" + sumOfNNumbers(arr));
+
+        //over
+
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+
+ public static float calculateAverageMarks(float[] marks) {
+        // main
+        System.out.println("How many subjects you have :");
+        int subjects = sc.nextInt();
+        float[] marks = new float[subjects];
+        System.out.println("Enter the marks :");
+        for (int i = 0; i < marks.length; i++) {
+            marks[i] = sc.nextFloat();
+        }
+        System.out.println("The average of you marks is : " + calculateAverageMarks(marks));
+        //over
+        float sum = 0.0f;
+        float average = 0.0f;
+        for (int i = 0; i < marks.length; i++) {
+            sum += marks[i];
+        }
+        average = sum / marks.length;
+        return average;
+    }
+
+  public static double calculateCompoundInterest(double principle, double rate, double timePerYear, double years) {
+
+        // main
+        System.out.println("Enter the Principle Amount :");
+        double principle = sc.nextDouble();
+        System.out.println("Enter the rate (For example -> 0.05 is 5% rate):");
+        double rate = sc.nextDouble();
+        System.out.println("Enter time per year :");
+        int timePerYear = sc.nextInt();
+        System.out.println("Enter the years :");
+        int years = sc.nextInt();
+        System.out.println("The compound Interest is :" + calculateCompoundInterest(principle, rate, timePerYear, years));
+
+
+        //over
+
+        return principle * Math.pow((1 + rate / timePerYear), timePerYear * years);
+    }
+
+   public static float calculateCGPA(int[] creditHours, float[] gradePoints) {
+
+        // Main
+
         System.out.println("How many hours allotted for you to study :");
         int size = sc.nextInt();
         int[] creditHours = new int[size];
@@ -81,9 +205,10 @@ public class ConditionalsLoops {
         float cgpa = calculateCGPA(creditHours, gradePoint);
         System.out.println("The cgpa is " + cgpa);
 
-    }
+        // Over
 
-    public static float calculateCGPA(int[] creditHours, float[] gradePoints) {
+
+
         if (creditHours.length != gradePoints.length) {
             throw new IllegalArgumentException("The numbers you have entered must be correct");
         }
@@ -98,10 +223,6 @@ public class ConditionalsLoops {
 
     }
 
-
-
-
-  /*
 
         public static int battingAverage(int totalRunScored, int numberOfTimeOut) {
 
