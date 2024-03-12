@@ -66,11 +66,76 @@ public class ConditionalsLoops {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println(calculateLCM(60,48));
+
 
     }
 
-    static int calculateLCM(int num1,int num2){
+
+
+
+
+
+
+  /*
+
+      static int sumOfDigit(int num) {
+        int sum = 0;
+        while (num != 0) {
+            sum += num %10;
+            num /= 10;
+        }
+        return sum;
+    }
+
+
+
+      public static boolean isLeapYear(int year) {
+
+//        Define a function isLeapYear that takes an integer year as a parameter.
+//        Inside the function, use an if-else statement to check if the year is divisible by 4.
+//        If the year is divisible by 4, check if it's also divisible by 100. If it is, then it must also be divisible by 400 to be a leap year.
+//        If the year is not divisible by 100, then it's a leap year.
+//        If the year is not divisible by 4, then it's not a leap year.
+
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                return year % 400 == 0;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+
+  static boolean isPerfectNumber(int num) {
+        //main
+        System.out.println(isPerfectNumber(6)); // divisor are 1,2,3 the sum is 6.
+        //over
+        int sum = 0;
+        for (int i = 1; i <= num / 2; i++) {
+            if (num % i == 0) {
+                sum += i;
+            }
+        }
+        return sum == num;
+    }
+
+ static boolean isVowel(char c) {
+ // main
+  char c = sc.next().charAt(0);
+        System.out.println(isVowel(c));
+
+ //over
+
+        c = Character.toLowerCase(c);
+        return switch (c) {
+            case 'a', 'e', 'i', 'o', 'u' -> true;
+            default -> false;
+        };
+
+    }
+     static int calculateLCM(int num1,int num2){
      int product = num1* num2;
      int hcf = calculateHCF(num1,num2);
      int lcm = product / hcf;
@@ -85,12 +150,6 @@ public class ConditionalsLoops {
         }
         return num1;
     }
-
-
-
-
-
-  /*
 
    static int calculateHCF(int num1, int num2) {
 
