@@ -66,15 +66,83 @@ public class ConditionalsLoops {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = 5;
-        int c = 3;
-
-        System.out.println("NCR (Combination) = " + nCr(n, c));
-        System.out.println("NPR (Permutation) = " + nPr(n, c));
+        System.out.println(calculateLCM(60,48));
 
     }
 
-    static int factorial(int n) {
+    static int calculateLCM(int num1,int num2){
+     int product = num1* num2;
+     int hcf = calculateHCF(num1,num2);
+     int lcm = product / hcf;
+        return lcm;
+    }
+
+    private static int calculateHCF(int num1,int num2) {
+        while (num2 != 0){
+            int temp = num1 % num2;
+            num1 = num2;
+            num2 = temp;
+        }
+        return num1;
+    }
+
+
+
+
+
+  /*
+
+   static int calculateHCF(int num1, int num2) {
+
+        while (num2 != 0) {
+            int temp = num1 % num2;
+            num1 = num2;
+            num2 = temp;
+        }
+        return num1;
+    }
+
+
+  static double calculateFutureInvestment(double principle, double annualInterestRate, int timesInterestCompoundPerYear, int years) {
+        // main
+
+        System.out.println(calculateFutureInvestment(10000, 5, 4, 5));
+
+        //over
+
+        double rate = annualInterestRate / 100;
+        return principle * Math.pow((1 + rate / timesInterestCompoundPerYear), timesInterestCompoundPerYear * years);
+
+    }
+
+   static boolean isPalindrome(int number){
+
+        //main
+        System.out.println(isPalindrome(12321));
+        System.out.println(isPalindrome(132465978));
+        //over
+
+        String original = Integer.toString(number);
+        String reversed = new StringBuilder(original).reverse().toString();
+        return original.equals(reversed);
+    }
+
+
+ static String revString(String str){
+
+        //main
+        String str = "Ankit";
+        String reversed =  revString(str);
+        System.out.println(reversed);
+        //over
+
+        StringBuilder sb = new StringBuilder(str);
+        sb.reverse();
+        return sb.toString();
+    }
+
+
+static int factorial(int n) {
         int fact = 1;
         for (int i = 2; i <= n; i++) {
             fact = fact * i;
@@ -89,14 +157,6 @@ public class ConditionalsLoops {
     static int nPr(int n, int r) {
         return factorial(n) / factorial(n - r);
     }
-
-
-
-
-
-
-  /*
-
 
     public static boolean armstrongNumber(int num) {
 
