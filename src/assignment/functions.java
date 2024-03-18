@@ -15,6 +15,7 @@ public class functions {
         Scanner sc = new Scanner(System.in);
 
         printMax(2,4,5);
+        printMin(2,4,7);
 
     }
 
