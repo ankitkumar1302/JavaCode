@@ -62,7 +62,13 @@ public class ConditionalsLoops {
 
      */
     public static void main(String[] args) {
+        int a = 1;
+        float b = 2.0f;
+        float c = 22.5f;
+        System.out.println(c);
+    }
 
+    static void factorsOfGivenNumber() {
 
     }
 
