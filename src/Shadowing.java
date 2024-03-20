@@ -1,4 +1,4 @@
-public class shadowing {
+public class Shadowing {
     static int x = 20;
     // What is shadowing in JAVA?
 

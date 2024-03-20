@@ -1,4 +1,4 @@
-public class reverse {
+public class Reverse {
     public static void main(String[] args) {
         int n = 23597;
 

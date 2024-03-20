@@ -1,4 +1,4 @@
-public class function {
+public class Function {
     public static void main(String[] args) {
         greeting();
     }

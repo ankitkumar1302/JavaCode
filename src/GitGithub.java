@@ -1,4 +1,4 @@
-public class github_and_git {
+public class GitGithub {
 
     public static void main(String[] args) {
 

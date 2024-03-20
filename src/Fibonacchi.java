@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class fibonacchi {
+public class Fibonacchi {
     /**
      *
      */

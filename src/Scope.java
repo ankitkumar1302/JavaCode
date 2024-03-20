@@ -1,4 +1,4 @@
-public class scope {
+public class Scope {
     public static void main(String[] args) {
 /*        scope  -> where we access our variables
           block scoping ->
