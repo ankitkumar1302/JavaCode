@@ -10,6 +10,7 @@ Write a program to print the factorial of a number by defining a method named 'F
 Also,
 1! = 1
 0! = 1
+
 Write a function to find if a number is a palindrome or not. Take number as parameter.
 
 Convert the programs in flow of program, first java, conditionals & loops assignments into functions.
