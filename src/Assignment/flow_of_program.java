@@ -1,4 +1,4 @@
-package assignment;
+package Assignment;
 
 public class flow_of_program {
 /*
