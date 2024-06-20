@@ -1,4 +1,4 @@
-## Topics Covered
+# Topics Covered
 
 Here are some of the topics covered in this repository:
 
@@ -22,3 +22,13 @@ Here are some of the topics covered in this repository:
   - Binary Search
 - **Hashing**
 - **Dynamic Programming**
+
+
+# Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/ankitkumar1302/JavaCode/tree/master/0001-two-sum) |
+# Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/ankitkumar1302/JavaCode/tree/master/0001-two-sum) |
