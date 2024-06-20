@@ -24,7 +24,7 @@ public class Example2DArray {
                 System.out.println("Error: the number of column is invalid");
             }
         } while (col > 10);
-        System.out.println("Enter Array number 1: ");
+        System.out.println("Enter Code.Array number 1: ");
         for (int i = 0; i < rows; i++) {
 
             for (int j = 0; j < col; j++) {
@@ -32,7 +32,7 @@ public class Example2DArray {
                 arr[i][j] = sc.nextInt();
             }
         }
-        System.out.println("Enter Array number 2: ");
+        System.out.println("Enter Code.Array number 2: ");
         for (int i = 0; i < rows; i++) {
 
             for (int j = 0; j < col; j++) {
@@ -40,8 +40,8 @@ public class Example2DArray {
                 arr2[i][j] = sc.nextInt();
             }
         }
-        System.out.println("The Array is :");
-        System.out.println("Array 1    Array2   Result");
+        System.out.println("The Code.Array is :");
+        System.out.println("Code.Array 1    Array2   Result");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < col; j++) {
                 System.out.print(arr[i][j] + " ");
